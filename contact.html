@@ -5,21 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Contact Me</h1>
+
+
+    <div class="container">
         <nav>
-            <ul>
+            <h2 class="name">Sanduni Pieris</h2>
+            <ul> 
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header>
 
-    <main>
+        <div class="container4">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> email@example.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, Country</p>
+            </div>
+        
+            <div class="newsletter-form">
+                <h2>Newsletter Signup</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+        
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">Sign up for our newsletter</label>
+                    </div>
+        
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    <!--<main>
         <section>
             <h2>Newsletter</h2>
             <form action="#" method="POST">
@@ -39,6 +72,6 @@
 
     <footer>
         <p>&copy; 2024 My Portfolio</p>
-    </footer>
+    </footer> -->
 </body>
 </html>
