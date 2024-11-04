@@ -1,4 +1,7 @@
 /* General reset */
+html{
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +18,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 body {
     font-family: 'roboto', sans-serif;
-    background: #080808;
+    background: #141313;
     color: #fff;
     line-height: 1.6;
 }
@@ -39,6 +42,7 @@ nav{
     align-items: center;
     justify-content:space-between ;
     flex-wrap: wrap;
+    padding-top: 10px;
 
 }
 
@@ -54,7 +58,7 @@ nav ul {
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin-top: 10px;
+    margin-top: 15px;
     margin: 5px 30px;
     position: relative;
 }
@@ -175,12 +179,9 @@ nav ul li a:hover::after {
     height: 100%;
 }
 
-.wrapper .facebook:hover,
-.wrapper .facebook:hover .name {
-    background: #0077B5 ;
-    color: #ffffff;
 
-}
+
+
 
 /* Main Section */
 main {
@@ -190,6 +191,49 @@ main {
 main section, main aside {
     margin: 10px 0;
 }
+
+
+
+
+
+
+
+
+
+/*** about page****/
+
+section{
+    padding: 50px;
+    margin-top: 50px;
+    background-color: #141313;
+
+}
+
+#about{
+    padding: 200px 0;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container2 h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.abt-description{
+    padding-top: 15px ;
+    text-align: justify;
+    justify-content: center;
+}
+
+
+
+
+
 
 
 /* Form */
