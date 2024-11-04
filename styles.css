@@ -8,7 +8,7 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'roboto', sans-serif;
     background: #080808;
     color: #fff;
     line-height: 1.6;
@@ -35,6 +35,12 @@ nav{
     flex-wrap: wrap;
 
 }
+
+.name{
+
+}
+
+
 nav ul {
     list-style: none;
 }
@@ -49,8 +55,9 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     position: relative;
+    /*padding-left: 70px*/
 }
 
 nav ul li a::after {
@@ -60,7 +67,7 @@ nav ul li a::after {
     background: #5a7aed;
     position: absolute;
     left: 0;
-    bottom: -6px;
+    bottom: -2px;
     transition: 0.5s;
 }
 
@@ -74,9 +81,40 @@ nav ul li a:hover::after {
 
 }
 
+.header-text p{
+    color: #a8a8c2;
+}
+
 .header-text h1{
-    font-size: 50px;
+    font-size: 60px;
     margin-top: 0px ;
+}
+
+.header-text h1 span{
+    color: #0e2efd;
+}
+
+.wrapper{
+    display: inline-block;
+    list-style: none;
+}
+
+.wrapper .icon{
+    display: inline-block;
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    /*box-shadow: 0 10 10px rgba(0,0,0,0.1);*/
+    flex-direction: column;
+    cursor: pointer;
+    transform: all 0.2s cubic-bezier(0.68, -0.55 , 0.265 , 1.55);
 }
 
 /* Main Section */
@@ -87,6 +125,7 @@ main {
 main section, main aside {
     margin: 10px 0;
 }
+
 
 /* Form */
 input[type="text"], input[type="email"], textarea {
