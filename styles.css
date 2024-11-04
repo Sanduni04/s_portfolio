@@ -202,112 +202,269 @@ main section, main aside {
 
 /*** about page****/
 
-section{
-    padding: 30px;
-    margin-top: 30px;
-    background-color: #141313;
-
-}
-
-#about{
-    padding: 150px 0;
-}
-
-.row{
-    display: flex;
+.about-section {
+    display: flex; /* Align  in a row */
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.container2 h1{
-    text-align: center;
-    font-size: 50px;
-}
-
-.abt-description{
-    font-size: 18px;
-    margin-left: 35px;
-    margin-right: 35px;
-    margin-top: 25px ;
-    text-align: justify;
-    justify-content: center;
-   
-}
-
-.abt-description p{
-    line-height: 1.8;
-}
-
-.tab-topics{
-    display: flex;
-    margin: 40px 50px 40px;
-    justify-content: center;
-    flex-basis: 33%;
+    margin-top: 5%;
+    padding: 60px;
     align-items: center;
 }
 
-.tab-links{
-    margin-right: 50px;
+.about-left {
+    flex-basis: 30%; /* Takes up 30% of the width */
+    text-align: left;
+}
+
+.about-left h1 {
+    font-size: 48px; /* Large font size for "About Me" */
+    margin: 0;
+}
+
+.about-left h3 {
+    font-size: 27px; /* Slightly smaller for "Who Am I?" */
+    margin-top: 10px;
+    color: #555; /* Lighter color for subtitle */
+}
+
+.about-right {
+    flex-basis: 65%; /* Takes up 55% of the width */
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.about-section p {
+    margin: 0; /* Remove default margin */
+}
+
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+}
+
+.card{
+    width: 320px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+
+.card-content{
+    padding: 16px;
+
+}
+
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-content p{
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+
+
+
+
+
+
+/* Blog page*/
+.container3{
+    
+    padding:15px 9%;
+    padding-bottom: 100px;
+}
+
+.container3 .heading{
+    margin-top: 3%;
+    text-align: center;
+    padding-bottom: 25px;
+    color:#fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 45px;
+}
+
+.container3 .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:45px;
+}
+
+.container3 .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding:30px 20px;
+}
+
+.container3 .box-container .box img{
+    height: 80px;
+}
+
+.container3 .box-container .box h3{
+    color:#444;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+.container3 .box-container .box p{
+    color:#777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.container3 .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.container3 .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+
+.container3 .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+@media (max-width:768px){
+    .container{
+        padding:20px;
+    }
+}
+
+
+
+
+/***form***/
+/***form***/
+.container4 {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center align in the middle of the page */
+    gap: 20px; /* Add space between the two sections */
+    flex-wrap: wrap; /* Wrap sections on smaller screens */
+}
+
+.contact-info {
+    flex: 1 1 45%; /* Allows flexibility and ensures sections adjust on smaller screens */
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
     font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.newsletter-form {
+    flex: 1 1 45%; /* Flex properties to make it responsive */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.newsletter-form h2 {
+    margin-top: 0;
+    color: #333;
     text-align: center;
 }
 
-
-
-
-
-
-.tab-content ul li{
-    list-style: none;
-    margin: 10px 0;
-    font-size: 17px;
+.form-group {
+    margin-bottom: 15px;
 }
 
-.tab-content ul li span{
-    color: #007bff;
-    font-size: 14px;
+.form-group label {
+    display: block;
+    color: #555;
+    margin-bottom: 5px;
 }
 
-
-
-
-
-
-
-
-
-/* Form */
-input[type="text"], input[type="email"], textarea {
+input[type="text"],
+input[type="email"] {
     width: 100%;
     padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-input[type="submit"] {
+.form-group.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.form-group.checkbox label {
+    margin: 0;
+    margin-left: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
     background-color: #007bff;
     color: white;
-    padding: 10px 15px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Transition */
+    font-size: 16px;
+    margin-top: 10px;
 }
 
-input[type="submit"]:hover {
+button:hover {
     background-color: #0056b3;
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container4 {
+        flex-direction: column; /* Stacks sections vertically on smaller screens */
+        gap: 0; /* Remove gap on smaller screens */
+    }
+
+    .contact-info {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
 }
+
+
+
+
+
+
 
 /* Media Queries */
 @media (max-width: 600px) {
