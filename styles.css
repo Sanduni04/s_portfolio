@@ -203,8 +203,8 @@ main section, main aside {
 /*** about page****/
 
 section{
-    padding: 50px;
-    margin-top: 50px;
+    padding: 30px;
+    margin-top: 30px;
     background-color: #141313;
 
 }
@@ -225,9 +225,17 @@ section{
 }
 
 .abt-description{
-    padding-top: 15px ;
+    font-size: 17px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 25px ;
     text-align: justify;
     justify-content: center;
+   
+}
+
+.abt-description p{
+    line-height: 2;
 }
 
 
