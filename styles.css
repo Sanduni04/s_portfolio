@@ -210,7 +210,7 @@ section{
 }
 
 #about{
-    padding: 200px 0;
+    padding: 150px 0;
 }
 
 .row{
@@ -225,7 +225,7 @@ section{
 }
 
 .abt-description{
-    font-size: 17px;
+    font-size: 18px;
     margin-left: 35px;
     margin-right: 35px;
     margin-top: 25px ;
@@ -235,8 +235,43 @@ section{
 }
 
 .abt-description p{
-    line-height: 2;
+    line-height: 1.8;
 }
+
+.tab-topics{
+    display: flex;
+    margin: 40px 50px 40px;
+    justify-content: center;
+    flex-basis: 33%;
+    align-items: center;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+
+
+
+
+
+.tab-content ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.tab-content ul li span{
+    color: #007bff;
+    font-size: 14px;
+}
+
+
 
 
 
