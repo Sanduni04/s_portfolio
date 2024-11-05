@@ -176,9 +176,24 @@ nav ul li a:hover::after {
 }
 
 .about-section h2 + p {
-    color: #2974cb; /* Adjust color as needed */
+    color: #2974cb; 
     font-size: 18px;
     margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.about-section h1 {
+    color: #ffffff;
+    font-size: 24px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .about-section > .about-left {
