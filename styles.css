@@ -175,6 +175,12 @@ nav ul li a:hover::after {
     align-items: center;
 }
 
+.about-section h2 + p {
+    color: #2974cb; /* Adjust color as needed */
+    font-size: 18px;
+    margin-top: 10px;
+}
+
 .about-section > .about-left {
     flex-basis: 35%; /* Takes up 30% of the width */
     text-align: left;
